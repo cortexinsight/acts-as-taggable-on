@@ -8,7 +8,7 @@ module ActsAsTaggableOn
     has_many :taggings, dependent: :destroy, class_name: '::ActsAsTaggableOn::Tagging'
 
     include MiliaModelHelper
-    	add_tenant
+    	add_universal_tenant
 
     ### VALIDATIONS:
 

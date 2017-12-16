@@ -22,7 +22,7 @@ module ActsAsTaggableOn
     after_destroy :remove_unused_tags
 
     include MiliaModelHelper
-    	add_tenant
+    	add_universal_tenant
 
     private
 
