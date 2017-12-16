@@ -21,6 +21,9 @@ module ActsAsTaggableOn
 
     after_destroy :remove_unused_tags
 
+    include MiliaModelHelper
+    	add_tenant
+
     private
 
     def remove_unused_tags
