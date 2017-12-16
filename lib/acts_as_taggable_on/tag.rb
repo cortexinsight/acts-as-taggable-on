@@ -6,6 +6,9 @@ module ActsAsTaggableOn
 
     has_many :taggings, dependent: :destroy, class_name: '::ActsAsTaggableOn::Tagging'
 
+    include MiliaModelHelper
+    	add_tenant
+
     ### VALIDATIONS:
 
     validates_presence_of :name
